@@ -18,7 +18,7 @@ public class BasePages {
 
     public BasePages(RemoteWebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(this.driver, Duration.ofSeconds(15));
+        wait = new WebDriverWait(this.driver, Duration.ofSeconds(10));
         js = (JavascriptExecutor) driver;
         actions = new Actions(driver);
         baseUrl = "https://www.lambdatest.com";
