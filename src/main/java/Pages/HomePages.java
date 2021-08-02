@@ -44,7 +44,7 @@ public class HomePages extends BasePages {
     public void clickCommunity(){
 
         String communityPath = "menu-item-10121";
-        Boolean sidedown = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("onesignal-slidedown-cancel-button")))).isDisplayed();
+        Boolean sidedown = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("normal-slidedown"))).isDisplayed();
 
         if (sidedown == true){
             driver.findElement(By.id("onesignal-slidedown-cancel-button")).click();
