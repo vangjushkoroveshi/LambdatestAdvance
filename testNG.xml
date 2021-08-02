@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LambdaTest_Advance" thread-count="4" parallel="tests">
+
+    <test name="LambdaTest - 1">
+        <parameter name="platform" value="Windows 10"/>
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="86.0"/>
+        <classes>
+            <class name="Tests.LambdaTests"></class>
+        </classes>
+    </test>
+
+    <test name="LambdaTest - 2">
+        <parameter name="platform" value="macOS Sierra"/>
+        <parameter name="browser" value="MicrosoftEdge"/>
+        <parameter name="version" value="87.0"/>
+        <classes>
+            <class name="Tests.LambdaTests"></class>
+        </classes>
+    </test>
+
+</suite>
